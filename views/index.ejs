@@ -1,3 +1,10 @@
 <%- include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+<div class="box">
+    <%let today = new Date().toISOString().slice(0, 10) %>
+    <h3> <%= today %></h3>
+</div>
 
+<input type="text" name="newItem" placeholder="new Item" autocomplete="off">
+<button class= "sub" type="submit" name="list" value="<%= today %>"
 <%- include("partials/footer.ejs") %>
