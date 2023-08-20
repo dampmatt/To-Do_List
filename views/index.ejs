@@ -1,12 +1,5 @@
 <%- include("partials/header.ejs") %>
-<div class="header">
-    <nav class="navbar" >
-        <form class="container-fluid justify-content-start" >
-          <button class="btn btn-outline-success me-2" type="button">Today List</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button">Work List</button>
-        </form>
-      </nav>
-</div>
+
 <div class="box">
     <%let today = new Date().toISOString().slice(0, 10) %>
     <h3> <%= today %></h3>

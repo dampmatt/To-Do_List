@@ -4,20 +4,6 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
-.btn{
-    border-width: 0;
-    box-shadow: none;
-    background-color: #e4e9fd;
-}
-.navbar {
-    background-color: #e4e9fd;
-    border: 0;
-  }
-
-
-/* input:focus {
-    outline: none;
-  } */
   
 input[type="text"]{
     text-align: center;
@@ -149,8 +135,4 @@ main{
 footer {
     bottom: 0;
     position: absolute;
-  }
-
-  .navbar { 
-    padding: 0; 
 }
