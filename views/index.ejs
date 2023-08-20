@@ -1,6 +1,6 @@
 <%- include("partials/header.ejs") %>
 <div class="header">
-    <nav class="navbar bg-body-tertiary" style="background-color: #e4e9fd;">
+    <nav class="navbar" >
         <form class="container-fluid justify-content-start" >
           <button class="btn btn-outline-success me-2" type="button">Today List</button>
           <button class="btn btn-sm btn-outline-secondary" type="button">Work List</button>
@@ -12,8 +12,17 @@
     <h3> <%= today %></h3>
 </div>
 
-<form>
-    <input type="text" />
-    <button>+</button>
-  </form>
+<form action="/submit" method="POST">
+  
+                <h1>Tasks to be Completed</h1>
+            <% for(var i=0; i<locals.task.length;i++){ %>
+              <input type="checkbox" name="check" value="<%= locals.task[i] %>" /> <%= task[i] %> 
+              <br>
+            <%  }%>
+          
+    </table>
+    <h1>add Tasks</h1>
+    <input type="text" name="work">
+    <button type="submit" name="list" value="add work">+</button>
+</form>
 <%- include("partials/footer.ejs") %>

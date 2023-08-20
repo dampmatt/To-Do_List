@@ -4,6 +4,16 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 }
+.btn{
+    border-width: 0;
+    box-shadow: none;
+    background-color: #e4e9fd;
+}
+.navbar {
+    background-color: #e4e9fd;
+    border: 0;
+  }
+
 
 /* input:focus {
     outline: none;
@@ -42,17 +52,7 @@ input[type="text"]{
 
 }
 
-form {
-    /* This bit sets up the horizontal layout */
-    display:flex;
-    flex-direction:row;
-    
-    /* This bit draws the box around it */
-    border:1px solid grey;
-  
-    /* I've used padding so you can see the edges of the elements. */
-    padding:1px;
-  }
+
 
   input[type="text"] {
     text-align: center;
@@ -102,10 +102,7 @@ input:not([type="range"]):not([type="color"]) {
     outline: none;
   }
   
-  /* Add the focus effect to the form so it contains the button */
-  form:focus-within { 
-    outline: 1px solid blue 
-  }
+
   
   button {
     /* Just a little styling to make it pretty */
